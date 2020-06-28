@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+jar {
+    manifest {
+        attributes('Main-Class': 'org.progx.twinkle.Twinkle')
+    }
+
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
+
+configurations {
+    jar.archiveName = 'Twinkle.jar'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'lib')
+}
