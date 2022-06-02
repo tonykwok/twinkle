@@ -2,7 +2,7 @@
 
 Java Swing/OpenGL Photo Viewer By [Romain Guy](https://www.curious-creature.com/)
 
-![Screenshot](https://tonykwok.github.io/assets/images/twinkle.png)
+![Screenshot](https://tonykwok.github.io/archives/assets/images/twinkle.png)
 
 ## Build
 
